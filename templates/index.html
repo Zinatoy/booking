@@ -1,135 +1,7 @@
-<!DOCTYPE html>
-
-<html lang="en-US">
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="ThemeStarz">
-
-    <link href="assets/fonts/font-awesome.css" rel="stylesheet" type="text/css">
-    <link href="assets/fonts/elegant-fonts.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900,400italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/zabuto_calendar.min.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-
-    <title>Accommodo - Accommodation HTML Template Full of Useful Features</title>
-
-</head>
-
-<body>
-<div class="page-wrapper">
-    <div id="page-header">
-        <header>
-            <div class="container">
-                <div class="secondary-nav">
-                    <div class="nav-trigger"><a data-toggle="collapse" href="#secondary-nav" aria-expanded="false" aria-controls="secondary-nav"><i class="fa fa-user"></i></a></div>
-                    <div id="secondary-nav">
-                        <nav>
-                            <div class="left opacity-60">
-                                <a href=""><i class="fa fa-phone"></i>+1 781-903-1047</a>
-                                <a href="mailto:hello@example.com"><i class="fa fa-envelope"></i>hello@example.com</a>
-                            </div>
-                            <!--end left-->
-                            <div class="right">
-                                <div class="element">
-                                    <select>
-                                        <option>$</option>
-                                        <option>€</option>
-                                    </select>
-                                </div>
-                                <!--end element-->
-                                <div class="element">
-                                    <a href="#tab-sign-in" data-toggle="modal" data-tab="true" data-target="#sign-in-register-modal">Sign In</a>
-                                </div>
-                                <!--end element-->
-                                <div class="element">
-                                    <a href="#tab-register" data-toggle="modal" data-tab="true" data-target="#sign-in-register-modal">Register</a>
-                                </div>
-                                <!--end element-->
-                                <div class="element">
-                                    <select>
-                                        <option>EN</option>
-                                        <option>DE</option>
-                                        <option>RU</option>
-                                        <option>ES</option>
-                                    </select>
-                                </div>
-                                <!--end element-->
-                            </div>
-                            <!--end right-->
-                        </nav>
-                    </div>
-                </div>
-                <!--end secondary-nav-->
-            </div>
-            <!--end container-->
-            <hr>
-            <div class="container">
-                <div class="primary-nav">
-                    <div class="left">
-                        <a href="index.html" id="brand"><img src="assets/img/logo.png" alt=""></a>
-                        <a class="nav-trigger" data-toggle="collapse" href="#primary-nav" aria-expanded="false" aria-controls="primary-nav"><i class="fa fa-navicon"></i></a>
-                    </div>
-                    <!--end left-->
-                    <div class="right" >
-                        <nav id="primary-nav">
-                            <ul>
-                                <li class="active"><a href="index.html">Home</a></li>
-                                <li><a href="about-us.html">About Us</a></li>
-                                <li>
-                                    <a href="#" class="has-child">Listing</a>
-                                    <ul class="child-nav">
-                                        <li><a href="listing.html">List Listing</a></li>
-                                        <li><a href="listing-matrix.html">Matrix Listing</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#" class="has-child">Pages</a>
-                                    <ul class="child-nav">
-                                        <li><a href="404.html">404</a></li>
-                                        <li>
-                                            <a href="#" class="has-child">Admin</a>
-                                            <ul class="child-nav">
-                                                <li><a href="edit.html">Edit Accommodation</a></li>
-                                                <li><a href="my-accommodations.html">My Accommodations</a></li>
-                                                <li><a href="profile.html">Profile</a></li>
-                                                <li><a href="reservations.html">Reservations</a></li>
-                                                <li><a href="reviews.html">Reviews</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="about-us.html">About Us</a></li>
-                                        <li><a href="detail.html">Accommodation Detail</a></li>
-                                        <li><a href="become-an-affiliate.html">Become an Affiliate</a></li>
-                                        <li>
-                                            <a href="#" class="has-child">Blog</a>
-                                            <ul class="child-nav">
-                                                <li><a href="blog.html">Blog Listing</a></li>
-                                                <li><a href="blog-detail.html">Blog Detail</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="faq.html">FAQ</a></li>
-                                        <li><a href="grid.html">Grid</a></li>
-                                        <li><a href="sticky-footer.html">Sticky Footer</a></li>
-                                        <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="contact-us.html">Contact Us</a></li>
-                                <li class="submit"><a href="submit.html"><span>Submit</span><i data-toggle="tooltip" data-placement="top" title="Submit"><img src="assets/img/plus.png" alt=""></i></a></li>
-                            </ul>
-                        </nav>
-                        <!--end nav-->
-                    </div>
-                    <!--end right-->
-                </div>
-                <!--end primary-nav-->
-            </div>
-            <!--end container-->
-        </header>
-        <!--end header-->
-    </div>
-    <!--end page-header-->
+{% extends 'homepage.html' %}
+{% load static %}
+{% block content %}
+{% include 'include/header.html' %} 
 
     <div id="page-content">
         <div class="hero-section" data-height="600">
@@ -175,7 +47,7 @@
                                     <!--end favorite-searches-->
                                 </div>
                                 <!--end container-->
-                                <div class="bg-transfer"><img src="assets/img/bg-hero.jpg" alt=""></div>
+                                <div class="bg-transfer"><img src="{% static 'assets/img/bg-hero.jpg' %}" alt=""></div>
                                 <!--end bg-transfer-->
                             </div>
                             <!--end inner-->
@@ -304,9 +176,9 @@
                                     <div class="mark-circle top" data-toggle="tooltip" data-placement="right" title="Top accommodation"><i class="fa fa-thumbs-up"></i></div>
                                     <a href="detail.html" class="wrapper">
                                         <div class="gallery">
-                                            <img src="assets/img/items/01.jpg" alt="">
-                                            <img src="#" class="owl-lazy" alt="" data-src="assets/img/items/02.jpg">
-                                            <img src="#" class="owl-lazy" alt="" data-src="assets/img/items/03.jpg">
+                                            <img src="{% static 'assets/img/items/01.jpg' %}" alt="">
+                                                <img src="#" class="owl-lazy" alt="" data-src="{% static 'assets/img/items/02.jpg' %}">
+                                            <img src="#" class="owl-lazy" alt="" data-src="{% static 'assets/img/items/03.jpg' %}">
                                         </div>
                                     </a>
                                     <div class="owl-navigation"></div>
@@ -344,9 +216,9 @@
                                     <div class="mark-circle top" data-toggle="tooltip" data-placement="right" title="Top accommodation"><i class="fa fa-thumbs-up"></i></div>
                                     <a href="detail.html" class="wrapper">
                                         <div class="gallery">
-                                            <img src="assets/img/items/02.jpg" alt="">
-                                            <img src="#" class="owl-lazy" alt="" data-src="assets/img/items/01.jpg">
-                                            <img src="#" class="owl-lazy" alt="" data-src="assets/img/items/03.jpg">
+                                                <img src="{% static 'assets/img/items/02.jpg' %}" alt="">
+                                            <img src="#" class="owl-lazy" alt="" data-src="{% static 'assets/img/items/01.jpg' %}">
+                                            <img src="#" class="owl-lazy" alt="" data-src="{% static 'assets/img/items/03.jpg' %}">
                                         </div>
                                     </a>
                                     <div class="owl-navigation"></div>
@@ -383,9 +255,9 @@
                                     <div class="mark-circle map" data-toggle="tooltip" data-placement="right" title="Show on map"><i class="fa fa-map-marker"></i></div>
                                     <a href="detail.html" class="wrapper">
                                         <div class="gallery">
-                                            <img src="assets/img/items/03.jpg" alt="">
-                                            <img src="#" class="owl-lazy" alt="" data-src="assets/img/items/01.jpg">
-                                            <img src="#" class="owl-lazy" alt="" data-src="assets/img/items/04.jpg">
+                                            <img src="{% static 'assets/img/items/03.jpg' %}" alt="">
+                                            <img src="#" class="owl-lazy" alt="" data-src="{% static 'assets/img/items/01.jpg' %}">
+                                            <img src="#" class="owl-lazy" alt="" data-src="{% static 'assets/img/items/04.jpg' %}">
                                         </div>
                                     </a>
                                     <div class="owl-navigation"></div>
@@ -422,9 +294,9 @@
                                     <div class="mark-circle map" data-toggle="tooltip" data-placement="right" title="Show on map"><i class="fa fa-map-marker"></i></div>
                                     <a href="detail.html" class="wrapper">
                                         <div class="gallery">
-                                            <img src="assets/img/items/04.jpg" alt="">
-                                            <img src="#" class="owl-lazy" alt="" data-src="assets/img/items/01.jpg">
-                                            <img src="#" class="owl-lazy" alt="" data-src="assets/img/items/05.jpg">
+                                            <img src="{% static 'assets/img/items/04.jpg' %}" alt="">
+                                            <img src="#" class="owl-lazy" alt="" data-src="{% static 'assets/img/items/01.jpg' %}">
+                                            <img src="#" class="owl-lazy" alt="" data-src="{% static 'assets/img/items/05.jpg' %}">
                                         </div>
                                     </a>
                                     <div class="owl-navigation"></div>
@@ -456,7 +328,7 @@
                     <div class="col-md-6 col-sm-12">
                         <a href="#" class="advertising-banner equal-height">
                             <span class="banner-badge">Advertising</span>
-                            <img src="assets/img/ad-banner-01.jpg" alt="">
+                            <img src="{% static 'assets/img/ad-banner-01.jpg' %}" alt="">
                         </a>
                     </div>
                     <!--end col-md-6-->
@@ -468,9 +340,9 @@
                                     <div class="mark-circle map" data-toggle="tooltip" data-placement="right" title="Show on map"><i class="fa fa-map-marker"></i></div>
                                     <a href="detail.html" class="wrapper">
                                         <div class="gallery">
-                                            <img src="assets/img/items/05.jpg" alt="">
-                                            <img src="#" class="owl-lazy" alt="" data-src="assets/img/items/01.jpg">
-                                            <img src="#" class="owl-lazy" alt="" data-src="assets/img/items/02.jpg">
+                                            <img src="{% static 'assets/img/items/05.jpg' %}" alt="">
+                                            <img src="#" class="owl-lazy" alt="" data-src="{% static 'assets/img/items/01.jpg' %}">
+                                            <img src="#" class="owl-lazy" alt="" data-src="{% static 'assets/img/items/02.jpg' %}">
                                         </div>
                                     </a>
                                     <div class="owl-navigation"></div>
@@ -508,11 +380,11 @@
                                     <div class="mark-circle top" data-toggle="tooltip" data-placement="right" title="Top accommodation"><i class="fa fa-thumbs-up"></i></div>
                                     <a href="detail.html" class="wrapper">
                                         <div class="gallery">
-                                            <img src="assets/img/items/06.jpg" alt="">
-                                            <img src="#" class="owl-lazy" alt="" data-src="assets/img/items/04.jpg">
-                                            <img src="#" class="owl-lazy" alt="" data-src="assets/img/items/03.jpg">
+                                            <img src="{% static 'assets/img/items/06.jpg' %}" alt="">
+                                            <img src="#" class="owl-lazy" alt="" data-src="{% static 'assets/img/items/04.jpg' %}">
+                                            <img src="#" class="owl-lazy" alt="" data-src="{% static 'assets/img/items/03.jpg' %}">
                                         </div>
-                                    </a>
+                                    </a>{% static '
                                     <div class="owl-navigation"></div>
                                     <!--end owl-navigation-->
                                 </div>
@@ -567,7 +439,7 @@
                                         </div>
                                         <div class="wrapper">
                                             <div class="gallery">
-                                                <img src="assets/img/items/01.jpg" alt="">
+                                                <img src="{% static 'assets/img/items/01.jpg' %}" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -595,7 +467,7 @@
                                         </div>
                                         <div class="wrapper">
                                             <div class="gallery">
-                                                <img src="assets/img/items/05.jpg" alt="">
+                                                <img src="{% static 'assets/img/items/05.jpg' %}" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -623,7 +495,7 @@
                                         </div>
                                         <div class="wrapper">
                                             <div class="gallery">
-                                                <img src="assets/img/items/07.jpg" alt="">
+                                                <img src="{% static 'assets/img/items/07.jpg' %}" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -651,7 +523,7 @@
                                         </div>
                                         <div class="wrapper">
                                             <div class="gallery">
-                                                <img src="assets/img/items/08.jpg" alt="">
+                                                <img src="{% static 'assets/img/items/08.jpg' %}" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -680,7 +552,7 @@
                                         </div>
                                         <div class="wrapper">
                                             <div class="gallery">
-                                                <img src="assets/img/items/03.jpg" alt="">
+                                                <img src="{% static 'assets/img/items/03.jpg' %}" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -708,7 +580,7 @@
                                         </div>
                                         <div class="wrapper">
                                             <div class="gallery">
-                                                <img src="assets/img/items/02.jpg" alt="">
+                                                <img src="{% static 'assets/img/items/02.jpg' %}" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -736,7 +608,7 @@
                                         </div>
                                         <div class="wrapper">
                                             <div class="gallery">
-                                                <img src="assets/img/items/04.jpg" alt="">
+                                                <img src="{% static 'assets/img/items/04.jpg' %}" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -764,7 +636,7 @@
                                         </div>
                                         <div class="wrapper">
                                             <div class="gallery">
-                                                <img src="assets/img/items/06.jpg" alt="">
+                                                <img src="{% static 'assets/img/items/06.jpg' %}" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -786,7 +658,7 @@
                     </div>
                     <div class="col-md-3 col-sm-4">
                         <a href="#" class="advertising-banner">
-                            <img src="assets/img/ad-banner-02.jpg" alt="">
+                            <img src="{% static 'assets/img/ad-banner-02.jpg' %}" alt="">
                         </a>
                     </div>
                 </div>
@@ -859,7 +731,7 @@
                 <!--end title-->
                 <div class="gallery-carousel">
                     <div class="gallery-item">
-                        <a href="blog-detail.html"><div class="image"><img src="assets/img/items/tip-01.jpg" alt=""></div></a>
+                        <a href="blog-detail.html"><div class="image"><img src="{% static 'assets/img/items/tip-01.jpg' %}" alt=""></div></a>
                         <div class="description">
                             <a href="blog-detail.html"><h3>Silver Peak Resort</h3></a>
                             <figure>Austria</figure>
@@ -869,7 +741,7 @@
                     </div>
                     <!--end gallery-item-->
                     <div class="gallery-item">
-                        <a href="blog-detail.html"><div class="image"><img src="assets/img/items/tip-02.jpg" alt=""></div></a>
+                        <a href="blog-detail.html"><div class="image"><img src="{% static 'assets/img/items/tip-02.jpg' %}" alt=""></div></a>
                         <div class="description">
                             <a href="blog-detail.html"><h3>Silver Peak Resort</h3></a>
                             <figure>Austria</figure>
@@ -879,7 +751,7 @@
                     </div>
                     <!--end gallery-item-->
                     <div class="gallery-item">
-                        <a href="blog-detail.html"><div class="image"><img src="assets/img/items/tip-03.jpg" alt=""></div></a>
+                        <a href="blog-detail.html"><div class="image"><img src="{% static 'assets/img/items/tip-03.jpg' %}" alt=""></div></a>
                         <div class="description">
                             <a href="blog-detail.html"><h3>Silver Peak Resort</h3></a>
                             <figure>Austria</figure>
@@ -889,7 +761,17 @@
                     </div>
                     <!--end gallery-item-->
                     <div class="gallery-item">
-                        <a href="blog-detail.html"><div class="image"><img src="assets/img/items/tip-01.jpg" alt=""></div></a>
+                        <a href="blog-detail.html"><div class="image"><img src="{% static 'assets/img/items/tip-01.jpg' %}" alt=""></div></a>
+                        <div class="description">
+                            <a href="blog-detail.html"><h3>Silver Peak Resort</h3></a>
+                            <figure>Austria</figure>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus posuere mattis. Donec </p>
+                            <a href="blog-detail.html" class="btn btn-default btn-small btn-framed btn-rounded">More</a>
+                        </div>
+                    </div>
+                    <!--end gallery-item-->{% static '
+                    <div class="gallery-item">
+                        <a href="blog-detail.html"><div class="image"><img src="{% static 'assets/img/items/tip-02.jpg' %}" alt=""></div></a>
                         <div class="description">
                             <a href="blog-detail.html"><h3>Silver Peak Resort</h3></a>
                             <figure>Austria</figure>
@@ -899,17 +781,7 @@
                     </div>
                     <!--end gallery-item-->
                     <div class="gallery-item">
-                        <a href="blog-detail.html"><div class="image"><img src="assets/img/items/tip-02.jpg" alt=""></div></a>
-                        <div class="description">
-                            <a href="blog-detail.html"><h3>Silver Peak Resort</h3></a>
-                            <figure>Austria</figure>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus posuere mattis. Donec </p>
-                            <a href="blog-detail.html" class="btn btn-default btn-small btn-framed btn-rounded">More</a>
-                        </div>
-                    </div>
-                    <!--end gallery-item-->
-                    <div class="gallery-item">
-                        <a href="blog-detail.html"><div class="image"><img src="assets/img/items/tip-03.jpg" alt=""></div></a>
+                        <a href="blog-detail.html"><div class="image"><img src="{% static 'assets/img/items/tip-03.jpg' %}" alt=""></div></a>
                         <div class="description">
                             <a href="blog-detail.html"><h3>Silver Peak Resort</h3></a>
                             <figure>Austria</figure>
@@ -923,7 +795,7 @@
             </div>
             <!--end container-->
             <div class="bg opacity-30">
-                <img src="assets/img/bg-map.jpg" alt="">
+                <img src="{% static 'assets/img/bg-map.jpg' %}" alt="">
             </div>
         </div>
         <!--end block-->
@@ -960,31 +832,31 @@
                     <div class="grid-item">
                         <a href="#">
                             <h3>Switzerland</h3>
-                            <img src="assets/img/items/pick-01.jpg" alt="">
+                            <img src="{% static 'assets/img/items/pick-01.jpg' %}" alt="">
                         </a>
                     </div>
                     <div class="grid-item">
                         <a href="#">
                             <h3>Prague</h3>
-                            <img src="assets/img/items/pick-02.jpg" alt="">
+                            <img src="{% static 'assets/img/items/pick-02.jpg' %}" alt="">
                         </a>
                     </div>
                     <div class="grid-item grid-item--width2">
                         <a href="#">
                             <h3>Norway</h3>
-                            <img src="assets/img/items/pick-03.jpg" alt="">
+                            <img src="{% static 'assets/img/items/pick-03.jpg' %}" alt="">
                         </a>
                     </div>
                     <div class="grid-item grid-item--width2">
                         <a href="#">
                             <h3>Machu Picchu</h3>
-                            <img src="assets/img/items/pick-04.jpg" alt="">
+                            <img src="{% static 'assets/img/items/pick-04.jpg' %}" alt="">
                         </a>
                     </div>
                     <div class="grid-item">
                         <a href="#">
                             <h3>Tuscany</h3>
-                            <img src="assets/img/items/pick-05.jpg" alt="">
+                            <img src="{% static 'assets/img/items/pick-05.jpg' %}" alt="">
                         </a>
                     </div>
                 </div>
@@ -1093,83 +965,10 @@
         <!--end block-->
     </div>
     <!--end page-content-->
-
-    <footer id="page-footer">
-        <div class="row-one">
-            <div class="container">
-                <div class="logos">
-                    <div class="logo">
-                        <a href="#"><img src="assets/img/logo-1.png" alt=""></a>
-                    </div>
-                    <!--/ .logo-->
-                    <div class="logo">
-                        <a href="#"><img src="assets/img/logo-2.png" alt=""></a>
-                    </div>
-                    <!--/ .logo-->
-                    <div class="logo">
-                        <a href="#"><img src="assets/img/logo-3.png" alt=""></a>
-                    </div>
-                    <!--/ .logo-->
-                    <div class="logo">
-                        <a href="#"><img src="assets/img/logo-4.png" alt=""></a>
-                    </div>
-                    <!--/ .logo-->
-                    <div class="logo">
-                        <a href="#"><img src="assets/img/logo-5.png" alt=""></a>
-                    </div>
-                    <!--/ .logo-->
-                </div>
-                <!--/ .logos-->
-            </div>
-        </div>
-        <!--end row-one-->
-        <div class="row-two clearfix">
-            <div class="container">
-                <div class="copyright pull-left">(C) 2016 Your Company, All Rights Reserved</div>
-                <div class="footer-nav pull-right">
-                    <a href="index.html">Home</a>
-                    <a href="about-us.html">About Us</a>
-                    <a href="listing.html">Listing</a>
-                    <a href="contact-us.html">Contact Us</a>
-                </div>
-            </div>
-            <div class="bg-transfer"><img src="assets/img/footer-bg.jpg" alt=""></div>
-        </div>
-        <!--end row-two-->
-    </footer>
-    <!--end page-footer-->
 </div>
 <!--end page-wrapper-->
 <a href="#page-header" class="to-top scroll" data-show-after-scroll="600"><i class="arrow_up"></i></a>
 
 
-
-<script type="text/javascript" src="assets/js/jquery-2.2.1.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&libraries=places"></script>
-<script type="text/javascript" src="assets/js/infobox.js"></script>
-<script type="text/javascript" src="assets/js/markerclusterer_packed.js"></script>
-<script type="text/javascript" src="assets/js/richmarker-compiled.js"></script>
-<script type="text/javascript" src="assets/js/markerwithlabel_packed.js"></script>
-<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
-<script type="text/javascript" src="assets/js/bootstrap-datepicker.js"></script>
-<script type="text/javascript" src="assets/js/icheck.min.js"></script>
-<script type="text/javascript" src="assets/js/owl.carousel.js"></script>
-<script type="text/javascript" src="assets/js/masonry.pkgd.min.js"></script>
-
-<script type="text/javascript" src="assets/js/maps.js"></script>
-<script type="text/javascript" src="assets/js/custom.js"></script>
-
-<!--[if lte IE 9]>
-<script src="assets/js/ie.js"></script>
-<![endif]-->
-
-<script>
-    var _latitude = 48.47292127;
-    var _longitude = 4.28672791;
-    var element = "map-item";
-    var useAjax = true;
-    bigMap(_latitude,_longitude, element, useAjax);
-</script>
-</body>
+{% endblock %}
+ 
