@@ -10,24 +10,19 @@
                     <div id="secondary-nav">
                         <nav>
                             <div class="left opacity-60">
-                                <a href=""><i class="fa fa-phone"></i>+1 781-903-1047</a>
-                                <a href="mailto:hello@example.com"><i class="fa fa-envelope"></i>hello@example.com</a>
+                                <a href=""><i class="fa fa-phone"></i>{{ home.phone }}</a>
+                                <a href="mailto:hello@example.com"><i class="fa fa-envelope"></i>{{ home.email }}</a>
                             </div>
                             <!--end left-->
                             <div class="right">
+                                 
+                                 
                                 <div class="element">
-                                    <select>
-                                        <option>$</option>
-                                        <option>€</option>
-                                    </select>
+                                    <a href="{% url 'user_login' %}">Логин</a>
                                 </div>
                                 <!--end element-->
                                 <div class="element">
-                                    <a href="#tab-sign-in" data-toggle="modal" data-tab="true" data-target="#sign-in-register-modal">Sign In</a>
-                                </div>
-                                <!--end element-->
-                                <div class="element">
-                                    <a href="#tab-register" data-toggle="modal" data-tab="true" data-target="#sign-in-register-modal">Register</a>
+                                    <a href="{% url 'register' %}">Зарегистрироваться</a>
                                 </div>
                                 <!--end element-->
                                 <div class="element">
@@ -51,24 +46,23 @@
             <div class="container">
                 <div class="primary-nav">
                     <div class="left">
-                        <a href="index.html" id="brand"><img src="{% static 'assets/img/logo.png' %}" alt=""></a>
+                        <a href="{% url 'index' %}" id="brand"><img src="{{ home.logo.url }}" alt="" width="150" height="100"></a>
                         <a class="nav-trigger" data-toggle="collapse" href="#primary-nav" aria-expanded="false" aria-controls="primary-nav"><i class="fa fa-navicon"></i></a>
                     </div>
                     <!--end left-->
                     <div class="right" >
                         <nav id="primary-nav">
                             <ul>
-                                <li class="active"><a href="index.html">Home</a></li>
-                                <li><a href="about-us.html">About Us</a></li>
+                                <li class="active"><a href="index.html">Домой</a></li>
+                                <li><a href="about-us.html">О нас</a></li>
                                 <li>
-                                    <a href="#" class="has-child">Listing</a>
+                                    <a href="#" class="has-child">Отели</a>
                                     <ul class="child-nav">
-                                        <li><a href="listing.html">List Listing</a></li>
-                                        <li><a href="listing-matrix.html">Matrix Listing</a></li>
+                                        <li><a href="listing.html">Список отелей</a></li> 
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="#" class="has-child">Pages</a>
+                                    <a href="#" class="has-child">Страницы</a>
                                     <ul class="child-nav">
                                         <li><a href="404.html">404</a></li>
                                         <li>
@@ -81,14 +75,14 @@
                                                 <li><a href="reviews.html">Reviews</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="about-us.html">About Us</a></li>
+                                        <li><a href="about-us.html">О нас</a></li>
                                         <li><a href="detail.html">Accommodation Detail</a></li>
                                         <li><a href="become-an-affiliate.html">Become an Affiliate</a></li>
                                         <li>
-                                            <a href="#" class="has-child">Blog</a>
+                                            <a href="#" class="has-child">Блог</a>
                                             <ul class="child-nav">
-                                                <li><a href="blog.html">Blog Listing</a></li>
-                                                <li><a href="blog-detail.html">Blog Detail</a></li>
+                                                <li><a href="blog.html">Список блога</a></li>
+                                                <li><a href="blog-detail.html">Детали блога</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="faq.html">FAQ</a></li>
@@ -97,8 +91,8 @@
                                         <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="contact-us.html">Contact Us</a></li>
-                                <li class="submit"><a href="submit.html"><span>Submit</span><i data-toggle="tooltip" data-placement="top" title="Submit"><img src="{% static 'assets/img/plus.png' %}" alt=""></i></a></li>
+                                <li><a href="contact-us.html">Связаться с нами</a></li>
+                                <!-- <li class="submit"><a href="submit.html"><span>Submit</span><i data-toggle="tooltip" data-placement="top" title="Submit"><img src="{% static 'assets/img/plus.png' %}" alt=""></i></a></li> -->
                             </ul>
                         </nav>
                         <!--end nav-->
@@ -112,3 +106,4 @@
         <!--end header-->
     </div>
     <!--end page-header-->
+ 
